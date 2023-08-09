@@ -31,8 +31,7 @@ function NewPlayerForm() {
     <div className='form-container'>
       <h3>Create a player:</h3>
       <form className='form' onSubmit={beginCreatePlayer}>
-        <label htmlFor='name'>Name</label>
-        <br />
+        <label htmlFor='name'>Name: </label>
         <input
           type='text'
           value={name}
@@ -41,9 +40,7 @@ function NewPlayerForm() {
             setName(e.target.value);
           }}
         />
-        <br />
-        <label htmlFor='breed'>Breed</label>
-        <br />
+        <label htmlFor='breed'>Breed: </label>
         <input
           type='text'
           value={breed}
@@ -52,9 +49,7 @@ function NewPlayerForm() {
             setBreed(e.target.value);
           }}
         />
-        <br />
-        <label htmlFor='status'>Status ("field" or "bench")</label>
-        <br />
+        <label htmlFor='status'>Status ("field" or "bench"):</label>
         <input
           type='enum'
           value={status}
@@ -63,9 +58,7 @@ function NewPlayerForm() {
             setStatus(e.target.value);
           }}
         />
-        <br />
-        <label htmlFor='imageUrl'>Image Url</label>
-        <br />
+        <label htmlFor='imageUrl'>Image Url:</label>
         <input
           type='text'
           value={imageUrl}
@@ -74,9 +67,7 @@ function NewPlayerForm() {
             setImageUrl(e.target.value);
           }}
         />
-        <br />
-        <label htmlFor='teamId'>Team ID</label>
-        <br />
+        <label htmlFor='teamId'>Team ID:</label>
         <input
           type='number'
           value={teamId}
@@ -85,7 +76,6 @@ function NewPlayerForm() {
             setTeamId(e.target.value);
           }}
         />
-        <br />
         <button type='submit'>Create Player</button>
       </form>
     </div>
