@@ -5,26 +5,32 @@
   font-family: arial, sans-serif;
 }
 
+.navbar {
+  padding: 2em;
+  justify-content: space-evenly;
+  background-color: #585e68;
+  text-align: center;
+}
+
 #container {
-  margin: 100px auto;
+  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
   gap: 0.3 rem;
 }
 
-.form-container {
-  display: block;
-  width: 20%;
-  padding: 0 25px;
+.tasks {
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
-form {
+.form-container {
   display: block;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 form input {
-  margin: 5px 0 10px;
+  margin: 5px;
   font-size: 1rem;
 }
 
@@ -33,7 +39,7 @@ form button {
   padding: 3px 8px;
   font-size: 1rem;
   display: block;
-  margin: 10px 0;
+  margin: 20px auto;
   border: solid 1px rgb(6, 184, 3);
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgb(77, 77, 77);
@@ -41,9 +47,19 @@ form button {
   color: aliceblue;
 }
 
-#player-container {
+.search-bar {
   margin: 0 auto;
-  width: 75%;
+}
+
+.search-bar label,
+.search-bar input {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+#player-container {
+  margin: 10px auto;
+  width: fit-content;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -67,6 +83,23 @@ form button {
   height: 300px;
   width: 100%;
   border-radius: 15px;
+}
+
+.details {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.details-image {
+  height: 425px;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+.details-article {
+  padding: 15px 0;
 }
 
 .delete-btn {
@@ -93,4 +126,17 @@ form button {
   box-shadow: 2px 2px 5px rgb(77, 77, 77);
   font-weight: 600;
   color: aliceblue;
+}
+
+.details-container {
+  margin: 0 auto;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.267);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  padding: 50px;
 }

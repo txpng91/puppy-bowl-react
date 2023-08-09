@@ -18,27 +18,42 @@ function SinglePlayer() {
     teammates = player?.team?.players?.map((player) => player.name);
   }
   return (
-    <div className='details-container'>
-      <div className='player-details'>
-        <img src={player?.imageUrl} alt={player?.name} />
-        <h4>{player?.name}</h4>
-        <p className='team-id'>
-          {player?.team?.id === null ? 'Not in a team yet' : player?.team?.id}
-        </p>
-        <p>
-          <strong>Breed:</strong> {player?.breed}
-        </p>
-        <p>
-          <strong>Status:</strong> {player?.status}
-        </p>
-        <p>
-          <strong>Team:</strong>
-          {!player?.team ? 'No team' : player?.team?.name}
-        </p>
-        <p>
-          <strong>Teammates:</strong>
-          {!teammates ? 'not in a team yet' : teammates}
-        </p>
+    <div id='player-container'>
+      <div className='details'>
+        <img
+          className='details-image'
+          src={player?.imageUrl}
+          alt={player?.name}
+        />
+        <div className='details-article'>
+          <p>
+            <strong>Name: </strong>
+            {player?.name}
+          </p>
+          <br />
+          <p className='team-id'>
+            <strong>id: </strong>
+            {player?.team?.id === null ? 'Not in a team yet' : player?.team?.id}
+          </p>
+          <br />
+          <p>
+            <strong>Breed:</strong> {player?.breed}
+          </p>
+          <br />
+          <p>
+            <strong>Status:</strong> {player?.status}
+          </p>
+          <br />
+          <p>
+            <strong>Team:</strong>
+            {!player?.team ? 'No team' : player?.team?.name}
+          </p>
+          <br />
+          <p>
+            <strong>Teammates:</strong>
+            {!teammates ? 'not in a team yet' : teammates}
+          </p>
+        </div>
       </div>
     </div>
   );

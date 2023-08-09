@@ -51,3 +51,21 @@ export async function removePlayer(id) {
     console.error('Unable to delete a player...', error);
   }
 }
+
+// Patch code for later use
+
+// export async function updatePlayer(id) {
+//   try {
+//     const res = await fetch(`${API_URL}/players/${id}`, {
+//       method: 'PUT',
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify(updatedObj),
+//     });
+//     const updatedPlayer = res.json();
+//     return updatedPlayer;
+//   } catch (error) {
+//     console.error(`Unable to update a player!`, error);
+//   }
+// }
